@@ -39,7 +39,7 @@ useEffect(() =>{
         theme: "light",
         });
     }else{
-      setContacts(p => {return [{ name, number, id: nanoid()}, ...p]})
+      setContacts(prevState => {return [{ name, number, id: nanoid()}, ...prevState]})
     }
   }
 
